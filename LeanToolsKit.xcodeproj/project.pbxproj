@@ -10,7 +10,6 @@
 		EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */; };
 		EAEBDD4C2125F46A00F26F74 /* LeanToolsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEBDD4A2125F46A00F26F74 /* LeanToolsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAEBDD572125F48500F26F74 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBDD542125F48500F26F74 /* String+Extensions.swift */; };
-		EAEBDD582125F48500F26F74 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBDD552125F48500F26F74 /* Data+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +18,6 @@
 		EAEBDD4A2125F46A00F26F74 /* LeanToolsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeanToolsKit.h; sourceTree = "<group>"; };
 		EAEBDD4B2125F46A00F26F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAEBDD542125F48500F26F74 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		EAEBDD552125F48500F26F74 /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				EAEBDD542125F48500F26F74 /* String+Extensions.swift */,
-				EAEBDD552125F48500F26F74 /* Data+Extensions.swift */,
 				EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */,
 			);
 			path = Source;
@@ -149,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */,
-				EAEBDD582125F48500F26F74 /* Data+Extensions.swift in Sources */,
 				EAEBDD572125F48500F26F74 /* String+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,7 +30,6 @@ extension Sequence {
     }
     
     // source: https://www.youtube.com/watch?v=CTZOjl6_NuY
-    
     func pair() -> AnySequence<(Element, Element)> {
         return AnySequence(zip(self, self.dropFirst()))
     }
