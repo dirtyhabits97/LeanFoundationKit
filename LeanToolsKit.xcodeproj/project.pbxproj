@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */; };
+		EAADAD1321951D62007F1753 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADAD1221951D62007F1753 /* UserDefaults+Extensions.swift */; };
 		EAEBDD4C2125F46A00F26F74 /* LeanToolsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEBDD4A2125F46A00F26F74 /* LeanToolsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAEBDD572125F48500F26F74 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBDD542125F48500F26F74 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
+		EAADAD1221951D62007F1753 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		EAEBDD472125F46A00F26F74 /* LeanToolsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeanToolsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEBDD4A2125F46A00F26F74 /* LeanToolsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeanToolsKit.h; sourceTree = "<group>"; };
 		EAEBDD4B2125F46A00F26F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				EAEBDD542125F48500F26F74 /* String+Extensions.swift */,
 				EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */,
+				EAADAD1221951D62007F1753 /* UserDefaults+Extensions.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */,
+				EAADAD1321951D62007F1753 /* UserDefaults+Extensions.swift in Sources */,
 				EAEBDD572125F48500F26F74 /* String+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
