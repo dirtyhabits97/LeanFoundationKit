@@ -10,13 +10,13 @@ import Foundation
 
 extension Sequence {
     
-    func group<Key>(by key: (Element) -> Key) -> [Key: [Element]] {
+    public func group<Key>(by key: (Element) -> Key) -> [Key: [Element]] {
         return reduce(into: [Key: [Element]](), { (result, element) in
             result[key(element), default: []] += [element]
         })
     }
     
-    func unique<Key: Equatable>(by key: (Element) -> Key) -> [Element] {
+    public func unique<Key: Equatable>(by key: (Element) -> Key) -> [Element] {
         var uniqueKeys: [Key] = []
         var uniqueElements: [Element] = []
         for element in self {
@@ -30,11 +30,11 @@ extension Sequence {
     }
     
     // source: https://www.youtube.com/watch?v=CTZOjl6_NuY
-    func pair() -> AnySequence<(Element, Element)> {
+    public func pair() -> AnySequence<(Element, Element)> {
         return AnySequence(zip(self, self.dropFirst()))
     }
     
-    func all(_ predicate: (Element) -> Bool) -> Bool {
+    public func all(_ predicate: (Element) -> Bool) -> Bool {
         for element in self {
             if !predicate(element) {
                 return false
@@ -43,7 +43,7 @@ extension Sequence {
         return true
     }
     
-    func none(_ predicate: (Element) -> Bool) -> Bool {
+    public func none(_ predicate: (Element) -> Bool) -> Bool {
         for element in self {
             if predicate(element) {
                 return false
@@ -52,7 +52,7 @@ extension Sequence {
         return true
     }
     
-    func any(_ predicate: (Element) -> Bool) -> Bool {
+    public func any(_ predicate: (Element) -> Bool) -> Bool {
         for element in self {
             if predicate(element) {
                 return true
@@ -61,7 +61,7 @@ extension Sequence {
         return false
     }
     
-    func count(where predicate: (Element) -> Bool) -> Int {
+    public func count(where predicate: (Element) -> Bool) -> Int {
         var count = 0
         for element in self {
             if predicate(element) {
@@ -75,7 +75,7 @@ extension Sequence {
 
 extension Sequence where Element: Numeric {
     
-    func sum() -> Element {
+    public func sum() -> Element {
         return reduce(0, +)
     }
     
