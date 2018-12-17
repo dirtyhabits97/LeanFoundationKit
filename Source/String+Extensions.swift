@@ -15,4 +15,8 @@ extension String {
         return newStr.count == 0 ? nil : newStr
     }
     
+    public func removingWhiteSpaces() -> String {
+        return self.replacingOccurrences(of: " ", with: "")
+    }
+    
 }
