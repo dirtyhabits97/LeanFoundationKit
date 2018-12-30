@@ -10,13 +10,16 @@ import Foundation
 
 extension String {
     
+    private static let whiteSpace = " "
+    private static let empty = ""
+    
     public func cleanned() -> String? {
         let newStr = self.trimmingCharacters(in: .whitespaces)
         return newStr.count == 0 ? nil : newStr
     }
     
     public func removingWhiteSpaces() -> String {
-        return self.replacingOccurrences(of: " ", with: "")
+        return self.replacingOccurrences(of: String.whiteSpace, with: String.empty)
     }
     
 }

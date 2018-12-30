@@ -16,12 +16,12 @@ extension Sequence {
         })
     }
     
-    public func unique<Key: Equatable>(by key: (Element) -> Key) -> [Element] {
+    public func unique<Key: Equatable>(by key: (Element) -> Key, filtering filteredKeys: [Key] = []) -> [Element] {
         var uniqueKeys: [Key] = []
         var uniqueElements: [Element] = []
         for element in self {
             let key = key(element)
-            if !uniqueKeys.contains(key) {
+            if !uniqueKeys.contains(key) && !filteredKeys.contains(key){
                 uniqueKeys.append(key)
                 uniqueElements.append(element)
             }
