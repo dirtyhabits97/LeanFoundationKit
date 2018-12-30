@@ -1,6 +1,6 @@
 //
 //  Sequence+Extensions.swift
-//  LeanToolsKit
+//  LeanFoundationKit
 //
 //  Created by Gonzalo Reyes Huertas on 10/27/18.
 //  Copyright © 2018 Gonzalo Reyes Huertas. All rights reserved.

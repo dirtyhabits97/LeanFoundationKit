@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EAEBDD462125F46A00F26F74"
-               BuildableName = "LeanToolsKit.framework"
-               BlueprintName = "LeanToolsKit"
-               ReferencedContainer = "container:LeanToolsKit.xcodeproj">
+               BuildableName = "LeanFoundationKit.framework"
+               BlueprintName = "LeanFoundationKit"
+               ReferencedContainer = "container:LeanFoundationKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAEBDD462125F46A00F26F74"
-            BuildableName = "LeanToolsKit.framework"
-            BlueprintName = "LeanToolsKit"
-            ReferencedContainer = "container:LeanToolsKit.xcodeproj">
+            BuildableName = "LeanFoundationKit.framework"
+            BlueprintName = "LeanFoundationKit"
+            ReferencedContainer = "container:LeanFoundationKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAEBDD462125F46A00F26F74"
-            BuildableName = "LeanToolsKit.framework"
-            BlueprintName = "LeanToolsKit"
-            ReferencedContainer = "container:LeanToolsKit.xcodeproj">
+            BuildableName = "LeanFoundationKit.framework"
+            BlueprintName = "LeanFoundationKit"
+            ReferencedContainer = "container:LeanFoundationKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

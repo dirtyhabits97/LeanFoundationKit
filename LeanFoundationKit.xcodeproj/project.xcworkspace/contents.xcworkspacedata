@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LeanToolsKit.xcodeproj">
+      location = "self:/Users/gonzalo/Projects/Personal Libraries/LeanToolsKit/LeanFoundationKit.xcodeproj">
    </FileRef>
 </Workspace>
