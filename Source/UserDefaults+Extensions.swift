@@ -10,13 +10,13 @@ import Foundation
 
 extension UserDefaults {
     
-    public class func save<V: Encodable>(encodableValue value: V, forKey key: String) throws {
-        standard.set(try value.jsonEncode(), forKey: key)
+    public class func save<Value: Encodable>(encodableValue value: Value, forKey key: String) throws {
+        standard.set(try value.jsonEncoded(), forKey: key)
     }
     
-    public class func retrieveDecodableValue<V: Decodable>(forKey key: String) -> V? {
+    public class func retrieveDecodableValue<Value: Decodable>(forKey key: String) -> Value? {
         guard let data = standard.object(forKey: key) as? Data else { return nil }
-        return try? data.jsonDecode()
+        return try? data.jsonDecoded()
     }
     
 }

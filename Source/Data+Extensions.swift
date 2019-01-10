@@ -10,7 +10,7 @@ import Foundation
 
 extension Data {
     
-    public func jsonDecode<T: Decodable>()throws  -> T {
+    public func jsonDecoded<T: Decodable>()throws  -> T {
         return try JSONDecoder().decode(T.self, from: self)
     }
     

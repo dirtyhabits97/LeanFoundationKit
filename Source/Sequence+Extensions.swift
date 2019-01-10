@@ -10,19 +10,22 @@ import Foundation
 
 extension Sequence {
     
-    public func group<Key>(by key: (Element) -> Key) -> [Key: [Element]] {
-        return reduce(into: [Key: [Element]](), { (result, element) in
-            result[key(element), default: []] += [element]
-        })
+    public func grouped<Key: Hashable>(by key: (Element) throws -> Key) rethrows -> [Key: [Element]] {
+        var result: [Key: [Element]] = [:]
+        for element in self {
+            let key = try key(element)
+            result[key, default: []] += [element]
+        }
+        return result
     }
     
-    public func unique<Key: Equatable>(by key: (Element) -> Key, filtering filteredKeys: [Key] = []) -> [Element] {
-        var uniqueKeys: [Key] = []
+    public func unique<Key: Hashable>(by key: (Element) throws -> Key) rethrows -> [Element] {
+        var uniqueKeys: Set<Key> = []
         var uniqueElements: [Element] = []
         for element in self {
-            let key = key(element)
-            if !uniqueKeys.contains(key) && !filteredKeys.contains(key){
-                uniqueKeys.append(key)
+            let key = try key(element)
+            if !uniqueKeys.contains(key) {
+                uniqueKeys.insert(key)
                 uniqueElements.append(element)
             }
         }
