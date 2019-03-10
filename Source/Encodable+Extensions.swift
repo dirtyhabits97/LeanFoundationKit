@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension Encodable {
+public extension Encodable {
     
-    public func jsonEncoded() throws -> Data {
+    func jsonEncoded() throws -> Data {
         return try JSONEncoder().encode(self)
     }
     

@@ -8,17 +8,25 @@
 
 import Foundation
 
-extension String {
+private extension String {
     
-    private static let whiteSpace = " "
-    private static let empty = ""
+    static let whiteSpace = " "
+    static let empty = ""
     
-    public func cleanned() -> String? {
+}
+
+public extension String {
+    
+    func cleanned() -> String? {
         let newStr = self.trimmingCharacters(in: .whitespaces)
         return newStr.count == 0 ? nil : newStr
     }
     
-    public func removingWhiteSpaces() -> String {
+    func removingOccurrences(of string: String) -> String {
+        return self.replacingOccurrences(of: string, with: String.empty)
+    }
+    
+    func removingWhiteSpaces() -> String {
         return self.replacingOccurrences(of: String.whiteSpace, with: String.empty)
     }
     

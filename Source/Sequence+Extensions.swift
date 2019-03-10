@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension Sequence {
+public extension Sequence {
     
-    public func grouped<Key: Hashable>(by key: (Element) throws -> Key) rethrows -> [Key: [Element]] {
+    func grouped<Key: Hashable>(by key: (Element) throws -> Key) rethrows -> [Key: [Element]] {
         var result: [Key: [Element]] = [:]
         for element in self {
             let key = try key(element)
@@ -19,7 +19,7 @@ extension Sequence {
         return result
     }
     
-    public func unique<Key: Hashable>(by key: (Element) throws -> Key) rethrows -> [Element] {
+    func uniqued<Key: Hashable>(by key: (Element) throws -> Key) rethrows -> [Element] {
         var uniqueKeys: Set<Key> = []
         var uniqueElements: [Element] = []
         for element in self {
@@ -32,39 +32,7 @@ extension Sequence {
         return uniqueElements
     }
     
-    // source: https://www.youtube.com/watch?v=CTZOjl6_NuY
-    public func pair() -> AnySequence<(Element, Element)> {
-        return AnySequence(zip(self, self.dropFirst()))
-    }
-    
-    public func all(_ predicate: (Element) -> Bool) -> Bool {
-        for element in self {
-            if !predicate(element) {
-                return false
-            }
-        }
-        return true
-    }
-    
-    public func none(_ predicate: (Element) -> Bool) -> Bool {
-        for element in self {
-            if predicate(element) {
-                return false
-            }
-        }
-        return true
-    }
-    
-    public func any(_ predicate: (Element) -> Bool) -> Bool {
-        for element in self {
-            if predicate(element) {
-                return true
-            }
-        }
-        return false
-    }
-    
-    public func count(where predicate: (Element) -> Bool) -> Int {
+    func count(where predicate: (Element) -> Bool) -> Int {
         var count = 0
         for element in self {
             if predicate(element) {
@@ -76,9 +44,40 @@ extension Sequence {
     
 }
 
-extension Sequence where Element: Numeric {
+public extension Sequence {
     
-    public func sum() -> Element {
+    func all(_ predicate: (Element) -> Bool) -> Bool {
+        for element in self {
+            if !predicate(element) {
+                return false
+            }
+        }
+        return true
+    }
+    
+    func none(_ predicate: (Element) -> Bool) -> Bool {
+        for element in self {
+            if predicate(element) {
+                return false
+            }
+        }
+        return true
+    }
+    
+    func any(_ predicate: (Element) -> Bool) -> Bool {
+        for element in self {
+            if predicate(element) {
+                return true
+            }
+        }
+        return false
+    }
+    
+}
+
+public extension Sequence where Element: Numeric {
+    
+    func sum() -> Element {
         return reduce(0, +)
     }
     

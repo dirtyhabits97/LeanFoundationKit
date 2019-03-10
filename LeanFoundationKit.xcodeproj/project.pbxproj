@@ -10,7 +10,6 @@
 		EA243B9821D85FA700B53508 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA243B9721D85FA700B53508 /* Encodable+Extensions.swift */; };
 		EA243B9A21D85FDA00B53508 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA243B9921D85FDA00B53508 /* Data+Extensions.swift */; };
 		EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */; };
-		EA50B52A21B6360D00E67CBB /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA50B52921B6360D00E67CBB /* Collection+Extensions.swift */; };
 		EAADAD1321951D62007F1753 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAADAD1221951D62007F1753 /* UserDefaults+Extensions.swift */; };
 		EAEBDD4C2125F46A00F26F74 /* LeanFoundationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEBDD4A2125F46A00F26F74 /* LeanFoundationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAEBDD572125F48500F26F74 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEBDD542125F48500F26F74 /* String+Extensions.swift */; };
@@ -20,7 +19,6 @@
 		EA243B9721D85FA700B53508 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		EA243B9921D85FDA00B53508 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
-		EA50B52921B6360D00E67CBB /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		EAADAD1221951D62007F1753 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
 		EAEBDD472125F46A00F26F74 /* LeanFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeanFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEBDD4A2125F46A00F26F74 /* LeanFoundationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeanFoundationKit.h; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 			children = (
 				EAEBDD542125F48500F26F74 /* String+Extensions.swift */,
 				EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */,
-				EA50B52921B6360D00E67CBB /* Collection+Extensions.swift */,
 				EAADAD1221951D62007F1753 /* UserDefaults+Extensions.swift */,
 				EA243B9721D85FA700B53508 /* Encodable+Extensions.swift */,
 				EA243B9921D85FDA00B53508 /* Data+Extensions.swift */,
@@ -158,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */,
-				EA50B52A21B6360D00E67CBB /* Collection+Extensions.swift in Sources */,
 				EA243B9821D85FA700B53508 /* Encodable+Extensions.swift in Sources */,
 				EA243B9A21D85FDA00B53508 /* Data+Extensions.swift in Sources */,
 				EAADAD1321951D62007F1753 /* UserDefaults+Extensions.swift in Sources */,

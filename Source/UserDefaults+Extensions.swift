@@ -8,13 +8,14 @@
 
 import Foundation
 
-extension UserDefaults {
+public extension UserDefaults {
     
-    public class func save<Value: Encodable>(encodableValue value: Value, forKey key: String) throws {
+    static func save<Value: Encodable>(encodableValue value: Value,
+                                       forKey key: String) throws {
         standard.set(try value.jsonEncoded(), forKey: key)
     }
     
-    public class func retrieveDecodableValue<Value: Decodable>(forKey key: String) -> Value? {
+    static func retrieveDecodableValue<Value: Decodable>(forKey key: String) -> Value? {
         guard let data = standard.object(forKey: key) as? Data else { return nil }
         return try? data.jsonDecoded()
     }

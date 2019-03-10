@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension Data {
+public extension Data {
     
-    public func jsonDecoded<T: Decodable>()throws  -> T {
+    func jsonDecoded<T: Decodable>()throws  -> T {
         return try JSONDecoder().decode(T.self, from: self)
     }
     
