@@ -31,3 +31,38 @@ public extension String {
     }
     
 }
+
+public extension String {
+    
+    subscript (offset: Int) -> Character {
+        return self[index(startIndex, offsetBy: offset)]
+    }
+    
+    subscript (range: Range<Int>) -> String {
+        let start = index(startIndex, offsetBy: range.lowerBound)
+        let end = index(startIndex, offsetBy: range.upperBound)
+        return String(self[start..<end])
+    }
+    
+    subscript (range: ClosedRange<Int>) -> String {
+        let start = index(startIndex, offsetBy: range.lowerBound)
+        let end = index(startIndex, offsetBy: range.upperBound)
+        return String(self[start...end])
+    }
+    
+    subscript (range: PartialRangeUpTo<Int>) -> String {
+        let end = index(startIndex, offsetBy: range.upperBound)
+        return String(self[..<end])
+    }
+    
+    subscript (range: PartialRangeThrough<Int>) -> String {
+        let end = index(startIndex, offsetBy: range.upperBound)
+        return String(self[...end])
+    }
+    
+    subscript (range: PartialRangeFrom<Int>) -> String {
+        let start = index(startIndex, offsetBy: range.lowerBound)
+        return String(self[start...])
+    }
+    
+}
