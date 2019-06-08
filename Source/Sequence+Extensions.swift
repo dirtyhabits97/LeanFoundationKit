@@ -32,10 +32,10 @@ public extension Sequence {
         return uniqueElements
     }
     
-    func count(where predicate: (Element) -> Bool) -> Int {
+    func count(where predicate: (Element) throws -> Bool) rethrows -> Int {
         var count = 0
         for element in self {
-            if predicate(element) {
+            if try predicate(element) {
                 count += 1
             }
         }

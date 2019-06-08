@@ -18,16 +18,16 @@ private extension String {
 public extension String {
     
     func cleanned() -> String? {
-        let newStr = self.trimmingCharacters(in: .whitespaces)
+        let newStr = trimmingCharacters(in: .whitespaces)
         return newStr.count == 0 ? nil : newStr
     }
     
-    func removingOccurrences(of string: String) -> String {
-        return self.replacingOccurrences(of: string, with: String.empty)
+    func removingOccurrences<S: StringProtocol>(of string: S) -> String {
+        return replacingOccurrences(of: string, with: String.empty)
     }
     
     func removingWhiteSpaces() -> String {
-        return self.replacingOccurrences(of: String.whiteSpace, with: String.empty)
+        return replacingOccurrences(of: String.whiteSpace, with: String.empty)
     }
     
 }

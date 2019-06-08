@@ -10,47 +10,46 @@ import Foundation
 
 public extension UserDefaults {
     
-    static func fetch<Value>(_ key: String) -> Value? {
+    static func fetch<Value>(
+        _ key: String
+    ) -> Value? {
         return standard.object(forKey: key) as? Value
     }
     
     @discardableResult
-    static func save<Value>(_ value: Value,
-                            forKey key: String) -> Value {
+    static func save<Value>(
+        _ value: Value,
+        forKey key: String
+    ) -> Value {
         standard.set(value, forKey: key)
         return value
     }
     
-    @discardableResult
-    static func update<Value>(_ key: String,
-                              update: (Value) -> Value) -> Value? {
-        guard let value: Value = fetch(key) else { return nil }
-        return save(update(value), forKey: key)
+    static func update<Value>(
+        _ key: String,
+        update: (Value) -> Value
+    ) {
+        guard let value: Value = fetch(key) else { return }
+        save(update(value), forKey: key)
     }
     
-    static func fetchOrCreate<Value>(_ key: String,
-                                     create: @autoclosure () -> Value) -> Value {
+    static func fetchOrCreate<Value>(
+        _ key: String,
+        create: @autoclosure () -> Value
+    ) -> Value {
         return fetch(key) ?? save(create(), forKey: key)
     }
     
-    @discardableResult
-    static func updateOrCreate<Value>(_ key: String,
-                                      updateOrCreate: (Value?) -> Value) -> Value {
-        return save(updateOrCreate(fetch(key)), forKey: key)
-    }
-    
-}
-
-public extension UserDefaults {
-    
-    static func save<Value: Encodable>(encodable value: Value,
-                                       forKey key: String) throws {
-        standard.set(try value.jsonEncoded(), forKey: key)
-    }
-    
-    static func fetchDecodable<Value: Decodable>(_ key: String) -> Value? {
-        guard let data = standard.object(forKey: key) as? Data else { return nil }
-        return try? data.jsonDecoded()
+    static func updateOrCreate<Value>(
+        _ key: String,
+        update: (Value) -> Value,
+        create: @autoclosure () -> Value
+    ) {
+        if let value: Value = fetch(key) {
+            save(update(value), forKey: key)
+        } else {
+            save(create(), forKey: key)
+        }
     }
     
 }

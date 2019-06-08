@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D61699D822356ABC0023AA09 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61699D722356ABC0023AA09 /* Int+Extensions.swift */; };
-		D66E522F22485B9900FBF600 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66E522E22485B9900FBF600 /* Array+Extensions.swift */; };
 		EA243B9821D85FA700B53508 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA243B9721D85FA700B53508 /* Encodable+Extensions.swift */; };
 		EA243B9A21D85FDA00B53508 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA243B9921D85FDA00B53508 /* Data+Extensions.swift */; };
 		EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */; };
@@ -19,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		D61699D722356ABC0023AA09 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
-		D66E522E22485B9900FBF600 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		EA243B9721D85FA700B53508 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		EA243B9921D85FDA00B53508 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 			children = (
 				EAEBDD542125F48500F26F74 /* String+Extensions.swift */,
 				EA2EE7E42184EDC200ED4BD0 /* Sequence+Extensions.swift */,
-				D66E522E22485B9900FBF600 /* Array+Extensions.swift */,
 				EAADAD1221951D62007F1753 /* UserDefaults+Extensions.swift */,
 				EA243B9721D85FA700B53508 /* Encodable+Extensions.swift */,
 				EA243B9921D85FDA00B53508 /* Data+Extensions.swift */,
@@ -163,7 +160,6 @@
 				EA2EE7E52184EDC200ED4BD0 /* Sequence+Extensions.swift in Sources */,
 				EA243B9821D85FA700B53508 /* Encodable+Extensions.swift in Sources */,
 				EA243B9A21D85FDA00B53508 /* Data+Extensions.swift in Sources */,
-				D66E522F22485B9900FBF600 /* Array+Extensions.swift in Sources */,
 				D61699D822356ABC0023AA09 /* Int+Extensions.swift in Sources */,
 				EAADAD1321951D62007F1753 /* UserDefaults+Extensions.swift in Sources */,
 				EAEBDD572125F48500F26F74 /* String+Extensions.swift in Sources */,

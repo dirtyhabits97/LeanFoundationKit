@@ -20,7 +20,7 @@ public extension Int {
         return count
     }
     
-    func digit(atPosition position: Int) -> Int? {
+    func digit(at position: Int) -> Int? {
         guard position < digitsCount else { return nil }
         let divisor = pow(Double(10), Double(position + 1))
         return self % Int(divisor) / Int(divisor/10)
