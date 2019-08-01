@@ -42,7 +42,7 @@
 		EAEBDD3D2125F46A00F26F74 = {
 			isa = PBXGroup;
 			children = (
-				EAEBDD522125F47000F26F74 /* Source */,
+				EAEBDD522125F47000F26F74 /* Extensions */,
 				EAEBDD492125F46A00F26F74 /* LeanFoundationKit */,
 				EAEBDD482125F46A00F26F74 /* Products */,
 			);
@@ -65,7 +65,7 @@
 			path = LeanFoundationKit;
 			sourceTree = "<group>";
 		};
-		EAEBDD522125F47000F26F74 /* Source */ = {
+		EAEBDD522125F47000F26F74 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				EAEBDD542125F48500F26F74 /* String+Extensions.swift */,
@@ -75,7 +75,7 @@
 				EA243B9921D85FDA00B53508 /* Data+Extensions.swift */,
 				D61699D722356ABC0023AA09 /* Int+Extensions.swift */,
 			);
-			path = Source;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
