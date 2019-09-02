@@ -17,7 +17,7 @@ private extension String {
 
 public extension String {
     
-    func cleanned() -> String? {
+    func cleaned() -> String? {
         let newStr = trimmingCharacters(in: .whitespaces)
         return newStr.count == 0 ? nil : newStr
     }
